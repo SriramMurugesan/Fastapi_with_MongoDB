@@ -5,3 +5,6 @@ def individual_serial(todo)->dict:
         "description":todo["description"],
         "complete":todo["complete"] 
     }
+
+def list_serial(todos)->list:
+    return [individual_serial(todo) for todo in todos]
